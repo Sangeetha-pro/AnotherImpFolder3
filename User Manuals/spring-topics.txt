@@ -1,0 +1,32 @@
+Spring Topics:
+
+//1.What is Spring Boot?
+//2.Why should we use Spring Boot Framework?
+//3.Advantages of Spring Boot
+                                                                             4.Limitations of Spring Boot
+                                                                             5.Goals of Spring Boot
+//6.Spring Container
+7.Ioc Container
+//8.Dependency Injection (DI)
+//9.Spring AoP
+//10.SpringBoot flow architecture
+//11.•Spring Cloud - 
+         Spring Cloud provides a set of annotations that can be used to enable service discovery and registration in a Spring Boot application.
+//12.spring mvc
+//13.Stereotype annotation
+//1.@RequestParam vs @QueryParam vs @PathVariable vs @PathParam
+//2.HTTP Request
+3. RequestBody and ResponseBody
+
+//Annotations
+
+1.@SpringBootApplication 
+2.@SpringBootConfiguration
+3.@EnableAutoConfiguration
+4.@ComponentScan
+
+//Differences
+
+1.Difference Between @Controller and @RestController Annotation in Spring
+2.Difference Between PUT and PATCH Request
+3.Different containers of Spring Boot – Bean Container and Application Container

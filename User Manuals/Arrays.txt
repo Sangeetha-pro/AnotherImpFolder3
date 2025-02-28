@@ -1,0 +1,82 @@
+Arrays:
+
+     Arrays allow us to store multiple values in a same Datatype.
+
+     Group of elements can be stored in one array.
+
+1.Defining an array:
+
+   int[] marks={100, 70 ,68 , 78, 88}
+
+In array , the index starts from 0.
+ 
+We can only have values of this specified type.
+
+2.To Print the content of the array:
+
+(ie.) Arrays.toString(variable)
+System.out.println(Arrays.toString(marks));
+
+When we declaring an array , the default is 0.
+
+3.Simiarly if we want default as 100 or anynumber, we can use the method called:
+
+Arrays.fill(variable_name,100)
+
+(ie): Arrays.fill(marks,100)
+
+4.compare method:
+
+Arrays.equals()-- it return true when the two variables have the same length and same values or else false.
+
+To display the array content in sysout by using the static method.
+
+5.To sort the elements in the array we can use:
+
+Arrays.sort(varaiable_name)
+
+(ie).Arrays.sort(marks)
+Enchanced for loop:
+
+for(int datatype variable:array variable(marks))
+
+6.Creation of array:
+
+int[] marks={100, 70 ,68 , 78, 88}
+int sum=0;
+for(int mark:marks){
+    sum=sum+mark;
+    }
+
+7.How to find length of an array?
+
+variablename.length
+
+Here, length is property not an array.
+------------------------------------------
+puzzle 1:
+
+int[] marks={1,2,3,4,5,6,7,8}
+
+marks.length
+8
+
+for(i=0;i<marks.length;i++){
+System.out.println(marks[i])
+}
+------------------------------------------
+Whenever we have objects, whenever we create an array of objects , the default is null.
+
+Persons[] persons =new Persons[5]
+ Persons[5] { null, null, null, null, null }
+-------------------------------------------------
+
+ArrayIndexOutOfBoundsException that means that we are trying to access an element beyond the imit of this specific array.
+
+-------------------------------------------
+
+
+
+
+
+

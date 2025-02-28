@@ -1,0 +1,36 @@
+Encapsulation: -- Basically protecting our object from other objects.We dont want other objects to directly change the data inside of our object.
+
+For that we will create methods so, other objects will use that methods to access the data.
+
+Is the concept of that clss should only access to the data inside the specific class.All the other classes should access data through the beheviour/methods of the class that the class offers.
+
+So, the principle is that other classess should not be able to change the data of a specific class directly.
+
+This is fundamental principles of encapsulation.
+Encapsulation is data and methods which access the data and set values to it.
+
+To do this we going to make variable as private .
+so, when we make the variable as private what would happen is , it cannot be accessed from outside this class.
+
+private int speed;//member variable--- are specific to an object
+
+void setSpeed(int speed) {  // local variable-- of this specific method
+System.out.println(speed);  ---// it will access the local variable
+		this.speed=speed;   ----// to accsess the member variable we have to add this keyword here
+	}  
+
+
+Why should we use methods and not expose the data directly?
+
+If we have methods , we can have logic to prevent this from happening(ex:-100)--if(speed>0)
+                              this.speed=speed;
+we can prevent bad code from other classes, from putting bad data into your objects 
+
+if we have methods then we can have validations around what can go into your object and what cannot go into your object as well.
+
+
+
+
+
+
+

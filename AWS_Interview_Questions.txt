@@ -1,0 +1,583 @@
+what is cloud computing?
+cloud computing allows users to access and use computing resources and services over the internet without needing to own or maintain physical infrastructure.
+======================================
+1.3 basic types of cloud computing?
+
+Infrastructure as a Service (IaaS)
+ In IaaS, cloud providers offer virtualized computing resources over the internet. This includes virtual machines, storage, and networking. Users can deploy and manage their own operating systems, applications, and development frameworks. Examples of IaaS providers include Amazon Web Services (AWS), Microsoft Azure, and Google Compute Engine.
+
+
+Platform as a Service (PaaS)
+ PaaS provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the underlying infrastructure. It typically includes development tools, databases
+
+Software as a Service (SaaS)
+ SaaS delivers software applications over the internet on a subscription basis. Users access these applications through a web browser or API without needing to install or maintain the software locally. Common examples of SaaS include email services like Gmail
+====================================================
+2.Similarity between availability zone and regions:
+Azs:Availability Zones are distinct locations within a single geographical region provided by a cloud service provider.
+Each Availability Zone typically consists of one or more data centers, with redundant power, networking, and connectivity.
+They allow users to distribute their applications and data across multiple physical locations for better resilience.
+
+Regions:
+Regions are separate geographic areas in which cloud service providers operate their infrastructure.
+Each region consists of multiple Availability Zones, which are isolated from each other to minimize the impact of failures or disruptions.
+
+Similarity: Both Availability Zones and Regions are designed to enhance redundancy and resilience by providing multiple isolated locations for deploying applications and storing data. This helps ensure high availability and fault tolerance.
+================================================
+3.what is autoscaling?
+Autoscaling is a feature in cloud computing that allows automatic adjustment of computational resources based on the current workload or demand. It enables applications to dynamically scale up or down their resource allocation in response to changes in traffic, without requiring manual intervention. Here's how it typically works:
+
+Scale-Out: When demand increases, and resources are approaching capacity limits, autoscaling automatically adds more resources, such as launching additional virtual servers or containers.
+Scale-In: Conversely, when demand decreases, and resources are underutilized, autoscaling removes excess resources to optimize cost and efficiency. This might involve terminating unnecessary instances or deallocating resources.
+=================================================
+4.services in aws
+Amazon Elastic Compute Cloud (EC2): Provides resizable compute capacity in the form of virtual servers (instances).
+Amazon Simple Storage Service (S3): Object storage service for storing and retrieving data.
+Amazon Relational Database Service (RDS): Managed relational database service supporting various database engines like MySQL, PostgreSQL, Oracle, and SQL Server.
+AWS CodeDeploy: Automates code deployments to EC2 instances, on-premises servers
+AWS Identity and Access Management (IAM): Helps you securely control access to AWS services and resources.
+====================================================
+5.EC2 instance?
+An EC2 instance is a virtual server provided by Amazon Web Services (AWS)
+allowing users to run applications and workloads on virtual machines in the cloud.
+EC2 instances provide a flexible, scalable, and cost-effective solution for running a wide range of applications and workloads in the cloud.
+=================================================
+6.what is subnet?
+
+a subnet refers to a subdivision of an Amazon Virtual Private Cloud (VPC). AWS allows users to create virtual networks called VPCs, which are isolated from other VPCs and the internet by default
+
+Public Subnets: Public subnets are configured with a route to the internet gateway, allowing instances within the subnet to communicate directly with the internet. Public subnets are typically used for resources that need to be accessible from the internet, such as web servers.
+Private Subnets: Private subnets are not directly accessible from the internet. They do not have a route to the internet gateway by default. Instances in private subnets can communicate with other resources within the same VPC or with resources in other VPCs connected via VPC peering, VPN, or AWS Direct Connect. Private subnets are commonly used for backend databases or application servers that do not require direct internet access.
+
+Imagine you have a big piece of land, like a farm. This is your VPC (Virtual Private Cloud) in AWS. Now, within that land, you want to divide it into smaller sections to organize things better. These smaller sections are your subnets.
+
+Each subnet is like a separate plot within your farm. You give each plot a specific size, like how many IP addresses it can have. This is called a CIDR block. So, one plot might have space for 10 devices, while another can fit 20.
+
+Now, let's say you want to make sure your farm is safe and can handle any situation. You decide to split it into different areas, like one for crops, one for animals, and one for your house. These are your Availability Zones (AZs) in AWS.
+
+In your farm, you might have some areas that everyone can access, like the entrance where visitors come in. These are your public subnets in AWS. But then, you might have areas where only you and your family can go, like your backyard. These are your private subnets in AWS.
+
+To keep everything organized, you create paths (routes) between different areas. You might have a path from the animal area to the crops area, but not from the animal area to your house. These paths are managed by route tables in AWS.
+
+Lastly, you want to make sure your farm is secure. You put up fences and gates (security groups and network ACLs) around each plot to control who can come in and out.
+
+So, in simpler terms, subnets in AWS are like dividing your farm into smaller sections, each with its own size, purpose, and level of access. They help you organize, secure, and manage your resources effectively.
+==================================================
+7.In security group , what is ssh traffic in aws?
+
+In AWS, SSH traffic refers to Secure Shell traffic. Secure Shell (SSH) is a cryptographic network protocol used for secure communication over an unsecured network. It provides a secure channel for accessing and managing remote servers or instances.
+enabling SSH traffic in an AWS security group allows you to securely access and manage your instances over the internet, providing a convenient and reliable method for remote administration and troubleshooting.
+==================================================
+8.What is meant by free tier application?//cloud trail?
+
+A "Free Tier application" typically refers to an application that is designed to utilize the free tier offerings provided by cloud service providers such as Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP).
+
+The Free Tier programs offered by these cloud providers allow users to access a limited set of their services at no cost for a certain period of time (e.g., 12 months for new AWS accounts) or up to a specified usage limit.
+
+A Free Tier application is one that is developed or deployed to fit within these usage limits or time constraints. These applications are often designed to be lightweight, cost-efficient, and to take advantage of the specific services available within the free tier offering.
+the AWS cloud trial is an opportunity for new users to explore the capabilities of AWS and experience the benefits of cloud computing without upfront costs. It allows users to test and evaluate AWS services, build applications, and gain hands-on experience with cloud technologies before committing to a paid subscription.
+==================================================
+9.what is t3.micro in aws?
+
+he "t3" instance family is designed for general-purpose computing workloads, offering a balance of performance, flexibility, and cost-effectiveness.
+Example:
+===========================================
+10.Aws services that are not regionic specific?
+IAM (Identity and Access Management): IAM is a service that enables you to securely control access to AWS services and resources. User identities, permissions, and policies configured in IAM are global and can be accessed from any AWS region.
+
+Route 53 (Domain Name System): Amazon Route 53 is a scalable domain name system (DNS) web service that provides domain registration, DNS routing, and health monitoring. DNS records and configurations created in Route 53 are global and can be accessed from any AWS region.
+================================================
+11.AWS Cloud Watch?
+AWS CloudWatch is a monitoring and observability service provided by Amazon Web Services (AWS) that allows users to collect and track metrics, monitor log files, set alarms, and automatically react to changes in their AWS resources and applications.
+ AWS CloudWatch provides comprehensive monitoring and observability capabilities for AWS resources and applications, helping users ensure the performance, availability, and reliability of their cloud-based infrastructure and services
+================================================
+12.Example for aws cloud watch ?
+et's say you have a web application running on Amazon EC2 instances, and you want to monitor the CPU utilization of these instances to ensure they are operating within acceptable limits. You can use AWS CloudWatch to set up monitoring and create alarms to alert you if the CPU utilization exceeds a certain threshold.
+
+Enable Monitoring: First, you enable detailed monitoring for your EC2 instances. This allows CloudWatch to collect more granular metrics, such as CPU utilization, every minute.
+
+Create Alarms: Next, you create a CloudWatch alarm to monitor CPU utilization. You set a threshold, such as 70% CPU utilization over a five-minute period. If the CPU utilization exceeds this threshold, CloudWatch will trigger the alarm.
+
+Set Actions: You configure actions to take when the alarm is triggered. For example, you can send a notification to an Amazon SNS (Simple Notification Service) topic, which could notify your operations team via email, SMS, or other means.
+
+Monitor Dashboards: You can create a CloudWatch dashboard to monitor the CPU utilization of your EC2 instances in real-time. The dashboard can display graphs and charts showing CPU utilization over time, along with other relevant metrics.
+
+Respond to Alarms: When an alarm is triggered due to high CPU utilization, you can investigate the cause of the issue and take appropriate action. This might involve scaling up your EC2 instances, optimizing your application code, or adding additional resources to handle the increased load.
+
+Automate Remediation: You can also automate remediation actions using AWS Lambda and CloudWatch Events. For example, you could create a Lambda function that automatically scales up your EC2 instances when CPU utilization exceeds a certain threshold, helping to maintain performance and availability without manual intervention.
+
+This example demonstrates how AWS CloudWatch can be used to monitor the performance and health of your AWS resources, detect and respond to issues in real-time, and automate remediation actions to ensure the reliability and scalability of your applications running in the cloud.
+====================================================
+13.what is the use of pair key in aws?//what is the use of key pair in aws ?--combination of public and private keys
+In AWS, a "key pair" refers to a pair of cryptographic keys used for securely accessing and authenticating with EC2 instances. When you launch an EC2 instance, you have the option to specify a key pair, which consists of a public key and a private key.
+key pairs play a crucial role in securely accessing and managing EC2 instances in AWS, providing authentication, encryption, and protection against unauthorized access. It's important to safeguard your private key and follow security best practices to prevent unauthorized access to your EC2 instances.
+===============================================
+14.What is IAM in AWS? // purpose of IAM?
+ IAM stands for Identity and Access Management. It is a web service that helps you securely control access to AWS resources. IAM enables you to manage users, groups, roles, and permissions, allowing you to grant or deny access to AWS services and resources based on specific permissions policies.
+Users: IAM allows you to create and manage users, which represent individuals who interact with AWS services.
+Groups: You can organize users into groups, which simplifies the management of permissions
+Roles: IAM roles are similar to users, but they are not associated with a specific identity. Instead, roles are assumed by entities such as IAM users, AWS services, or external identities (such as users authenticated through federated access).
+===================================================
+16.How many buckets can we create in aws by default?
+By default, AWS imposes a soft limit of 100 buckets per AWS account. This means that you can create up to 100 Amazon S3 (Simple Storage Service) buckets per AWS account without requesting a limit increase.
+===================================================
+17.Explain SES in AWS?
+Amazon SES (Simple Email Service) is a scalable and cost-effective email sending service provided by Amazon Web Services (AWS). It allows you to send and receive email messages effortlessly, enabling you to build and manage email communication workflows reliably and securely.-->in a minimal cost
+=================================================
+18.What is AWS config?
+AWS Config is a service provided by Amazon Web Services (AWS) that enables you to assess, audit, and evaluate the configuration of your AWS resources continuously. It helps you monitor and maintain compliance with your desired configurations, security policies
+AWS Config is a powerful tool for managing and monitoring the configuration of your AWS resources, ensuring consistency, security, and compliance across your AWS environment.
+=================================================
+19.what is cloudfront in AWS?
+Amazon CloudFront is a content delivery network (CDN) service provided by Amazon Web Services (AWS). It accelerates the delivery of static and dynamic web content to users around the world, improving the performance, availability, and security of your web applications and websites.
+Amazon CloudFront is a highly scalable and flexible CDN service that helps you deliver content to your users faster, more securely, and with lower latency. Whether you're serving static websites, streaming media, or dynamic web applications, CloudFront can help you optimize performance and improve the user experience for your audience globally.
+===================================================
+20.AWS attacks?
+DDoS (Distributed Denial of Service): DDoS attacks involve flooding a target system or network with a massive volume of traffic, causing it to become overwhelmed and unavailable to legitimate users. AWS provides services such as AWS Shield and AWS WAF to help protect against DDoS attacks by mitigating and filtering malicious traffic.
+
+Data Breaches: Data breaches involve unauthorized access to sensitive information stored in AWS environments, such as customer data, financial records, or intellectual property. Attackers may exploit misconfigured security settings, weak access controls, or vulnerabilities in applications to gain access to data. Implementing encryption, access controls, and monitoring can help prevent and detect data breaches.
+==============================================
+21.What are the things to minimize this attacks in aws?
+Minimizing attacks and enhancing security in AWS requires a multi-factor approach
+1.Implement Identity and Access Management (IAM) Controls
+2.Implement encryption for data at rest and in transit using AWS Key Management Service (KMS) or other encryption mechanisms.
+=====================================================
+22.what is route 53 in aws?
+Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service provided by Amazon Web Services (AWS). It enables you to manage the domain names and route traffic to your AWS resources and external endpoints efficiently and reliably.
+Overall, Amazon Route 53 is a reliable and scalable DNS service that helps you manage domain names, route traffic, and improve the performance and availability of your web applications and services in the AWS cloud. Whether you're hosting a simple website, running a complex application architecture, or managing a global e-commerce platform, Route 53 provides the tools and capabilities you need to manage your DNS infrastructure effectively.
+====================================================
+23.after creation of ec2 instances , can we change security groups and inbound and outbound rules?
+
+Yes, you can change the security groups and inbound/outbound rules associated with your EC2 instances after they have been created. AWS provides flexibility to modify the security configurations of your EC2 instances to meet your changing requirements.
+
+Here's how you can modify security groups and rules for existing EC2 instances:
+
+Modifying Security Groups:
+
+Navigate to the EC2 Dashboard in the AWS Management Console.
+Select "Instances" from the navigation pane to view a list of your EC2 instances.
+Choose the EC2 instance for which you want to modify the security group.
+From the details pane at the bottom, locate the "Security groups" section.
+Click on the security group name to view its details.
+In the security group details page, click the "Actions" dropdown menu and select "Edit inbound rules" or "Edit outbound rules" as needed.
+Add, remove, or modify the rules as required, and then click "Save" to apply the changes.
+Modifying Inbound and Outbound Rules:
+
+Similarly, navigate to the EC2 Dashboard and select your EC2 instance.
+From the details pane, locate the "Security groups" section and click on the associated security group name.
+In the security group details page, you can modify the inbound and outbound rules directly by clicking on the "Edit inbound rules" or "Edit outbound rules" buttons.
+Adjust the rules as needed, such as adding new rules, removing existing ones, or changing the allowed ports, protocols, and IP ranges.
+Remember to click "Save" to apply the changes to the security group.
+====================================================
+23.how to make ec2 instance pubic IP address static?
+
+To make the public IP address of your EC2 instance static, you can allocate and associate an Elastic IP (EIP) address with the instance. Here's how you can do it through the AWS Management Console:
+
+Allocate an Elastic IP (EIP):
+
+Go to the EC2 dashboard in the AWS Management Console.
+Under the "Network & Security" section, click on "Elastic IPs."
+Click on the "Allocate new address" button.
+Optionally, you can choose to "Amazon's pool of IPv4 addresses" or "Specify IPs owned by me" (if you have brought your own IP address).
+Click "Allocate" to create the new Elastic IP address.
+Associate the Elastic IP with your EC2 instance:
+
+In the Elastic IPs dashboard, select the newly allocated Elastic IP address.
+Click on "Actions" and then "Associate address."
+Choose the EC2 instance you want to associate with the Elastic IP from the instance dropdown menu.
+Optionally, you can also choose to associate with a specific private IP address if your instance has multiple network interfaces.
+Click "Associate" to complete the process.
+Once you've associated the Elastic IP address with your EC2 instance, the instance will use this static public IP address for inbound and outbound communication. Even if you stop and start the instance or perform other actions that might change its default public IP address, the Elastic IP address will remain associated with the instance until you explicitly disassociate it.
+
+Keep in mind that AWS may charge you for unused Elastic IP addresses if they are not associated with a running EC2 instance or a Network Interface. Therefore, it's a good practice to release the Elastic IP address if you no longer need it to avoid incurring unnecessary charges.
+=========================================================================================================================================================
+24.s3 in aws?
+
+Amazon Simple Storage Service (Amazon S3) is a scalable object storage service provided by Amazon Web Services (AWS). It is designed to store and retrieve any amount of data from anywhere on the web, offering high durability, availability, and performance at a low cost
+---------------------------------------------------------------------------------------------------------------------------
+why amazon s3 is important?
+Amazon S3 is important because it provides a reliable, scalable, and cost-effective storage solution for storing and managing data in the cloud. It enables businesses to store, protect, and access their data securely, with high durability, availability, and performance, while also offering flexibility and integration with other AWS services.
+
+=================================================================================================================================
+25.how to store rows and column wise in s3 ?
+Amazon S3 (Simple Storage Service) is an object storage service designed to store and retrieve any amount of data from anywhere on the web. Unlike traditional relational databases, S3 does not support direct storage of data in rows and columns. Instead, data in S3 is stored as objects, which can be files of any type, such as documents, images, videos, or structured data files.
+However, you can store structured data in S3 using file formats that support row and column-wise storage, such as CSV (Comma-Separated Values), JSON (JavaScript Object Notation)
+=============================================================================================================================================
+26.what is VPC in aws?
+A virtual private cloud (VPC) is a secure, isolated private cloud hosted within a public cloud. VPC customers can run code, store data, host websites, and do anything else they could do in an ordinary private cloud, but the private cloud is hosted remotely by a public cloud provider.
+ It allows you to create a logically isolated section of the AWS cloud where you can launch AWS resources, such as EC2 instances, RDS databases, and Lambda functions, in a virtual network that you define.
+
+===========================================================================================================================================
+27.I have private database and want to connect to ec2 in aws , what are the things i want to take care?
+When connecting an Amazon EC2 instance to a private database in AWS, there are several factors to consider to ensure security, performance, and reliability. 
+Network Configuration:
+
+Ensure that both the EC2 instance and the database are located within the same Virtual Private Cloud (VPC) or connected VPCs using VPC Peering or VPN connections.
+Database Security:
+
+Implement robust security measures for your database, such as strong authentication, encryption at rest and in transit, and access controls based on roles and permissions.
+Data Encryption:
+
+If the database contains sensitive data, ensure that data is encrypted both at rest and in transit. Many databases offer native encryption capabilities, or you can use AWS services like Amazon RDS with encryption enabled.
+Backup and Disaster Recovery:
+
+Establish backup and disaster recovery procedures for the database to protect against data loss and ensure business continuity. Regularly back up database data and transaction logs, and test the recovery process to verify its effectiveness.
+============================================================================================================================================================
+28.I want to attach firewall to my vpc , so which service should I choose?
+Security Groups: Security groups are stateful firewalls that control inbound and outbound traffic to your EC2 instances, ENIs (Elastic Network Interfaces), and other AWS resources within the same VPC
+Network Access Control Lists (NACLs): NACLs are stateless firewalls that control traffic at the subnet level within a VPC. 
+=============================================================================================================================================
+29.what is efs and ebs ? difference between them? -- single ebs cannot be used to multiple instances,
+Amazon Elastic File System (EFS) and Amazon Elastic Block Store (EBS) are both storage services 
+EFS: EFS is a fully managed file storage service that provides scalable, shared storage for use with AWS cloud services and on-premises resources. It is designed for use cases that require shared access to files across multiple EC2 instances, such as content management systems, web serving, development environments, and data analytics workloads.
+EBS: EBS is a block storage service that provides persistent, high-performance block-level storage volumes for use with EC2 instances. It is designed for use cases that require durable and low-latency storage volumes attached to individual EC2 instances, such as databases, transactional applications, and boot volumes.
+
+In summary, EFS is a scalable and shared file storage service for use cases that require shared access to files across multiple EC2 instances, while EBS is a block storage service for individual EC2 instances that require persistent and high-performance storage volumes. The choice between EFS and EBS depends on your specific storage requirements, performance needs, and workload characteristics.
+===================================================================================================================================================
+30.How can I estimate the cost when I want to purchase the services in aws?
+Estimating the cost of services in AWS can be done using various tools and resources provided by AWS itself
+AWS Pricing Calculator: The AWS Pricing Calculator is a web-based tool that allows you to estimate the cost of AWS services based on your usage 
+Cost Explorer: AWS Cost Explorer is a tool within the AWS Management Console that allows you to visualize, understand, and manage your AWS costs and usage over time
+Budgets and Alerts: AWS Budgets is a feature that allows you to set custom cost and usage budgets for your AWS resources
+==============================================================================================================================================
+31.what is horizontal scaling in aws? -- increases the instances, can be managed by load balancers.
+Horizontal scaling, also known as scaling out, is a method used to increase the capacity or performance of an application by adding more instances (such as EC2 instances) or resources in a distributed manner. 
+By horizontally scaling your application in AWS, you can improve performance, increase availability, and accommodate growth without the limitations of a single server or instance. Horizontal scaling allows you to leverage the elasticity and flexibility of cloud computing to meet the demands of your users or workload effectively, whether it's handling web traffic, processing data, or running distributed applications.
+================================================================================================================================================
+32.what is vertical scaling? -->increasing the resources
+Vertical scaling, also known as scaling up, is a method used to increase the capacity or performance of an application by adding more resources (such as CPU, memory, or storage) to an existing instance or server.
+
+By vertically scaling your instances in AWS, you can increase the capacity and performance of your applications or services without the complexity of managing multiple instances or the need for load balancing. However, it's essential to consider the limitations and cost implications of vertical scaling compared to horizontal scaling when designing and scaling your AWS infrastructure.
+============================================================================================================================================
+33.AWS Lambda comes under which services? Iaas or Paas or Saas?
+
+AWS Lambda is categorized as a serverless computing service, which falls under the Platform as a Service (PaaS) model.
+AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS) that allows you to run code without provisioning or managing servers. It enables you to build and deploy applications using a serverless architecture, where you can execute code in response to events without the need to manage infrastructure.
+======================================================================================================
+34.what is infrastructure in aws perspective?
+infrastructure refers to the underlying physical and virtual resources that form the foundation of the cloud computing environment. This infrastructure encompasses a wide range of components and services provided by AWS to support the deployment, management, and operation of applications and workloads in the cloud.
+=================================================================================================================================================
+35.why we use amazon kenisis over amazon lambda?
+use Amazon Kinesis over Amazon Lambda when your use case involves real-time streaming data ingestion, processing, and analytics at scale. Amazon Kinesis provides specialized features and capabilities for handling streaming data, whereas Amazon Lambda is more general-purpose and can be used for a wide range of event-driven computing tasks, including real-time data processing.
+=================================================================================================================================================
+36.what are the types of ec2 instance?
+on-demand
+Reserved
+spot
+dedicated
+=================================================================================================================================
+37.RDS and dynamoDB in aws?
+Amazon RDS (Relational Database Service)://expensive
+
+Amazon RDS is a managed relational database service that makes it easy to set up, operate, and scale relational databases in the cloud. It supports several popular database engines, including MySQL, PostgreSQL, MariaDB, Oracle, Microsoft SQL Server, and Amazon Aurora (a MySQL and PostgreSQL-compatible database engine developed by AWS).
+Amazon DynamoDB:
+
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It is designed for applications that require single-digit millisecond latency at any scale, such as gaming, mobile apps, ad tech, and IoT (Internet of Things) platforms.
+=======================================================================================================================================
+38.which aws services is useful to take server backup
+Amazon EBS Snapshots:
+
+Amazon Elastic Block Store (EBS) snapshots are point-in-time backups of Amazon EBS volumes.
+Amazon RDS Automated Backups and Snapshots:
+
+Amazon RDS (Relational Database Service) supports automated backups and manual snapshots of your RDS database instances. 
+Amazon S3 Bucket Versioning:
+
+Amazon Simple Storage Service (S3) supports versioning, which allows you to keep multiple versions of objects in a bucket
+Amazon EFS (Elastic File System) Snapshots:
+
+Amazon EFS supports snapshots, which are point-in-time backups of your file system.
+==================================================================================================================================================
+39.Aws shield and why do we want to use aws shield?
+AWS Shield is a managed Distributed Denial of Service (DDoS) protection service offered by Amazon Web Services (AWS) that helps protect web applications running on AWS against DDoS attacks. 
+=====================================================================================================================================================
+40.Aws shield and why do we want to use aws shield?
+the traffic distribution among multiple ELBs in AWS depends on how you configure your environment, how clients access your resources, and the load balancing mechanisms you use. Each ELB can have its own configuration, DNS name, and traffic distribution rules, allowing you to tailor the setup to your specific requirements.
+===================================================================================================================================================
+41.I have three different ELB, how will the traffic will be distributed?
+using route 53
+ the traffic distribution among multiple ELBs in AWS depends on how you configure your environment, how clients access your resources, and the load balancing mechanisms you use. Each ELB can have its own configuration, DNS name, and traffic distribution rules, allowing you to tailor the setup to your specific requirements.
+======================================================================================================================================================
+42.According to AWS lambda , how to balance the load and how to do that?
+AWS Lambda automatically scales and manages the execution of your functions in response to incoming requests or events. It dynamically allocates compute resources based on the number of requests and concurrency settings you configure
+============================================================================================================================================================43.Aws storage volume gateways?
+AWS Storage Gateway is a hybrid cloud storage service that provides seamless integration between on-premises environments and AWS cloud storage services
+
+File Gateway:
+
+File Gateway provides a file interface (NFS or SMB) to access data stored in Amazon S3 buckets. It allows you to mount an S3 bucket as a network file share on your on-premises servers or applications, enabling seamless access to S3 storage using standard file protocols.
+
+Volume Gateway:
+
+Volume Gateway provides block storage volumes that can be mounted as iSCSI devices on your on-premises servers or virtual machines. 
+
+Tape Gateway:
+
+Tape Gateway provides a virtual tape library (VTL) interface to archive data to Amazon S3 and Glacier storage tiers. It emulates physical tape libraries and tape drives, allowing you to use existing backup applications that work with tape-based storage.
+
+These storage gateway configurations provide different ways to extend your on-premises storage infrastructure to the AWS cloud, enabling seamless integration, data migration, backup, and archival workflows. 
+====================================================================================================================================================
+44.Vpc and on-premises servers?
+When integrating a Virtual Private Cloud (VPC) in AWS with on-premises servers, you're essentially creating a hybrid cloud environment. This integration allows your on-premises infrastructure to seamlessly communicate with resources and services in your AWS VPC. 
+=====================================================================================================
+45.on choosing database , what are the things consider?
+which database?
+When choosing a database for your application or project, there are several factors to consider to ensure that the database meets your requirements in terms of performance, scalability, reliability, flexibility, and cost-effectiveness
+========================================================================================================================
+46.In banking applications , many transactions going to happen . in that case which aws database can we use?
+========================================================================================
+47.Intial capacity of s3 bucket storage?
+there is no initial capacity limit imposed by AWS. S3 is designed to be highly scalable, allowing you to store virtually unlimited amounts of data. 
+===============================================================
+48.which aws service I have to choose , it should automatically encrypted when i try to store a data?
+If you want to ensure that your data is automatically encrypted when stored in AWS, you can use Amazon S3 (Simple Storage Service) with default encryption enabled.
+1.Server-Side Encryption (SSE):-SSE-S3: Amazon S3 manages the keys used for encryption.
+SSE-KMS: Amazon S3 uses AWS Key Management Service (KMS) to manage the keys.
+2.Client-Side Encryption:
+
+You can also encrypt data before uploading it to Amazon S3 using client-side encryption. In this approach, you encrypt the data on your client or application server using encryption libraries or tools, and then upload the encrypted data to S3.
+
+By enabling default encryption for your S3 buckets, you can ensure that your data is protected with encryption at rest, helping to enhance security and compliance for your AWS storage infrastructure.
+==================================================================================================================
+49.which aws service I have to choose , when i dont want to backup of by data in database?
+If you don't want to create backups of your data in a database, you can consider using Amazon RDS (Relational Database Service) with automated backups disabled.
+By disabling automated backups for your Amazon RDS instances, you prevent Amazon RDS from creating and retaining backups of your database data. However, keep in mind that without backups, you may lose data in the event of accidental deletion, corruption, or hardware failure. It's important to implement alternative data protection measures, such as regular database snapshots, data replication, or external backups, to ensure data durability and availability.
+==========================================================================================================================================
+
+50.Amazon aurora?
+Amazon Aurora is a fully managed relational database engine provided by Amazon Web Services (AWS). It is compatible with MySQL and PostgreSQL, offering high performance, scalability, and reliability for database workloads in the cloud
+================================================================================================================
+51.In memeory databases?
+========================================================================
+52.Elastic cache?
+=================================================
+53.need of subnets?
+subnets are fundamental building blocks of network architecture in cloud environments, providing segmentation, security, routing, and high availability features essential for deploying scalable, resilient, and secure applications. They enable you to design and implement complex network architectures that meet your performance, security, and compliance requirements.
+
+Public Subnets:
+
+Public subnets are configured to have direct access to the internet. They typically have a route to an internet gateway (IGW) or a virtual private gateway (VPG) attached to a public-facing load balancer or NAT gateway.
+
+Private Subnets:
+
+Private subnets, on the other hand, do not have direct access to the internet. They do not have a route to an internet gateway, and their outbound traffic is routed through a network address translation (NAT) gateway or NAT instance located in a public subnet.
+
+example: youtube.
+=================================================================================================================================
+54.how can we access private subnets?
+Accessing resources in private subnets typically involves setting up networking and security configurations to allow controlled communication between resources in private subnets and other parts of your network.
+==================================================================================================================================================
+55.how do we handle sensitive data in AWS?
+Handling sensitive data in AWS requires implementing a combination of security best practices, encryption mechanisms, access controls, and compliance measures to protect data confidentiality, integrity, and availability. 
+Data Encryption:
+Access Controls:
+Network Security:
+you can effectively handle sensitive data in AWS while maintaining data confidentiality, integrity, and compliance with regulatory requirements. 
+=====================================================================================================================================================
+56.how we recover the deleted instance?
+Accidentally Terminated Instance with EBS Volume Persistence:
+If you have configured your EBS volumes to persist after instance termination (using the "DeleteOnTermination" attribute), the associated EBS volumes will still exist after terminating the instance.
+You can recover the instance by launching a new EC2 instance and attaching the existing EBS volumes to it.
+
+Accidentally Deleted Instance without EBS Volume Persistence:
+
+If the associated EBS volumes were deleted along with the instance, you may still be able to recover data if you have enabled EBS snapshots or backups.
+Check if there are any snapshots or backups of the EBS volumes associated with the deleted instance.
+If snapshots or backups exist, you can create new EBS volumes from the snapshots or backups and attach them to a new EC2 instance.
+=====================================================================================================================================================
+57.can we assure our data is secured in aws environment?
+While AWS provides a secure cloud infrastructure, ensuring the security of your data in an AWS environment requires a shared responsibility model between AWS and the customer. AWS is responsible for the security of the cloud infrastructure (e.g., data centers, networking, hardware), while customers are responsible for securing their data and applications within the cloud
+========================================================================================================================================================
+58.difference between elastic beanstack and elastic kubernetes service?
+Elastic Beanstalk (EB) and Amazon Elastic Kubernetes Service (EKS) are both managed services provided by AWS for deploying and managing applications in the cloud, but they have different architectures and use cases
+
+Elastic Beanstalk: Elastic Beanstalk is a Platform-as-a-Service (PaaS) offering that simplifies the deployment and management of web applications and services. It provides pre-configured application environments for various programming languages, such as Java, .NET, Python, Node.js, and PHP. Users deploy their application code to Elastic Beanstalk, and AWS manages the underlying infrastructure, including provisioning, scaling, and load balancing.
+Elastic Kubernetes Service: Amazon EKS is a fully managed Kubernetes service that allows users to run containerized applications using Kubernetes, an open-source container orchestration platform. With EKS, users can deploy and manage Kubernetes clusters on AWS infrastructure, leveraging Kubernetes features such as deployment, scaling, service discovery, and automated rollouts.
+=============================================================================================================================================
+59.example for security services
+AWS Identity and Access Management (IAM):
+
+IAM enables you to manage access to AWS services and resources securely. You can create and manage IAM users, groups, and roles, and define permissions to control who can access specific resources and perform actions within your AWS environment.
+AWS Key Management Service (KMS):
+
+KMS allows you to create and manage cryptographic keys used for encrypting and decrypting data in AWS. You can use KMS to encrypt data at rest, in transit, and manage the encryption keys used by other AWS services like S3, EBS, RDS, and Redshift.
+===============================================================================================================================
+60.amazon dynamodb? --NoSql database
+Amazon DynamoDB is a fully managed NoSQL database service provided by AWS. It is designed to provide fast and predictable performance with seamless scalability for applications requiring single-digit millisecond response times.
+
+Amazon DynamoDB is a powerful and flexible NoSQL database service that enables developers to build highly scalable, high-performance applications with minimal operational overhead. It is well-suited for a wide range of use cases, including web and mobile applications, gaming, IoT, and real-time analytics.
+===========================================================================================================================================
+61.how load balancers work?
+Load balancers distribute incoming network traffic across multiple servers or backend resources to ensure high availability, reliability, and scalability of applications. Here's how load balancers typically work:
+
+Client Request:
+
+When a client sends a request to access a web application or service, such as accessing a website or making an API call, the request is directed to the load balancer's domain name or IP address.
+Load Balancer:
+
+The load balancer receives the incoming request and forwards it to one of the backend servers or resources based on a predefined load balancing algorithm.
+The load balancer may perform health checks on the backend servers to ensure they are available and healthy before forwarding traffic to them.
+==================================================================================================================================================
+62.how do recover terminated ec2 instance?
+ecovering a terminated EC2 instance depends on whether the associated EBS volumes were deleted along with the instance or if they were retained after termination. Here's how you can recover a terminated EC2 instance in both scenarios:
+
+Retaining EBS Volumes after Termination:
+
+If you have configured your EBS volumes to persist after instance termination (by deselecting the "Delete on Termination" option), the associated EBS volumes will still exist after terminating the instance.
+To recover the terminated instance:
+Go to the EC2 dashboard in the AWS Management Console.
+Click on "Instances" from the left sidebar to view the list of instances.
+If the terminated instance is still listed, select it and choose "Actions" > "Instance State" > "Start" to restart the instance.
+If the instance is no longer listed, you can launch a new EC2 instance and attach the existing EBS volumes manually.
+Navigate to "Volumes" from the left sidebar to find the EBS volumes associated with the terminated instance.
+Select the desired EBS volumes, choose "Actions" > "Attach Volume," and select the newly launched instance to attach the volumes to it.
+After attaching the volumes, you may need to mount and configure them within the operating system of the instance to access the data.
+Deleted EBS Volumes after Termination:
+
+If the associated EBS volumes were deleted along with the instance, you may still be able to recover data if you have snapshots or backups of the volumes.
+To recover the terminated instance:
+Go to the EC2 dashboard in the AWS Management Console.
+Navigate to "Snapshots" from the left sidebar to find and restore snapshots of the deleted EBS volumes.
+Create new EBS volumes from the snapshots.
+Launch a new EC2 instance and attach the newly created EBS volumes to it.
+After attaching the volumes, you may need to mount and configure them within the operating system of the instance to access the data.
+====================================================================================================================================================
+63.types of load balancers in aws?
+Application Load Balancer (ALB):
+
+ALB operates at the application layer (Layer 7) of the OSI model and is designed to route traffic based on content or application-specific information.
+
+Network Load Balancer (NLB):
+
+NLB operates at the transport layer (Layer 4) of the OSI model and is designed to handle TCP, UDP, and TLS traffic with extremely high performance and low latency.
+
+Classic Load Balancer (CLB):
+
+CLB is the legacy load balancer offering in AWS, providing basic load balancing capabilities for applications using the traditional EC2-Classic network.
+====================================================================================================================================================
+64.why we use vpc to secure multi tier architecture?
+
+A Virtual Private Cloud (VPC) is a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define
+ a VPC serves as the foundation for securing a multi-tier architecture in AWS by providing network isolation, access control, encryption, monitoring, and compliance capabilities. By leveraging the features and capabilities of VPC, you can design and implement a robust and secure architecture that protects your applications and data from threats and unauthorized access.
+====================================================================================================================================================
+65.cloud watch?
+mazon CloudWatch is a monitoring and observability service provided by AWS, designed to help you collect and track metrics, monitor logs, set alarms, and automatically react to changes in your AWS resources and applications
+========================================================================================================================================================
+66.difference between freetier architecture and multi tier architecture?
+Free Tier Architecture:
+
+Free Tier Architecture typically refers to the use of AWS Free Tier resources and services to build and deploy simple applications or proof-of-concept projects without incurring charges.
+
+Multi-Tier Architecture:
+
+Multi-Tier Architecture is a design pattern used to structure complex applications into multiple layers or tiers, each serving a specific function or role in the application stack.
+==================================================================================================================================================
+67.lambda edge in aws?
+AWS Lambda@Edge is a serverless computing service provided by AWS that allows you to run Lambda functions at AWS Edge locations, closer to your end-users. Lambda@Edge enables you to customize and enhance the content delivery, security, and performance of your web applications by executing code in response to CloudFront events. 
+Lambda@Edge is a powerful service that extends the capabilities of AWS Lambda to the edge of the AWS global network, enabling you to customize, optimize, and secure your web applications with serverless computing at the edge.
+================================================================================================================================================
+68.storage services in aws?
+Amazon Simple Storage Service (S3):
+Amazon Elastic Block Store (EBS):
+
+Amazon EBS provides block-level storage volumes that can be attached to EC2 instances and used as primary storage for data that requires low-latency access.
+Amazon Elastic File System (EFS):
+
+Amazon EFS is a fully managed file storage service that provides scalable and highly available network file storage for EC2 instances.
+=====================================================================================================================================================
+69.Amazon ECS
+Amazon Elastic Container Service (ECS) is a fully managed container orchestration service provided by AWS. It enables you to easily deploy, manage, and scale containerized applications using Docker containers and Kubernetes.
+Amazon ECS simplifies the deployment and management of containerized applications on AWS, providing a scalable, reliable, and cost-effective platform for running Docker containers in production environments. It is well-suited for a wide range of use cases, including microservices architectures, batch processing, web applications, and more.
+
+================================================================================================================================
+70.rule of s3 bucket in aws?
+Bucket Names:
+
+Bucket names must be globally unique across all of AWS.
+Bucket names can contain letters, numbers, hyphens, and periods, with certain restrictions.
+Bucket names cannot be modified after creation.
+Bucket Policies:
+
+Bucket policies are JSON-based access control policies that define permissions for the bucket and its contents.
+Policies can grant or deny access to specific AWS accounts, IAM users, roles, or federated users.
+Bucket policies can also specify conditions for access, such as IP address ranges or request headers.
+Access Control Lists (ACLs):
+
+ACLs are legacy access control mechanisms that allow you to grant permissions to individual objects within the bucket.
+ACLs can grant permissions to specific AWS accounts or predefined groups (e.g., "authenticated users," "log delivery group").
+Cross-Origin Resource Sharing (CORS):
+
+CORS rules allow you to control access to your S3 resources from web browsers using XMLHttpRequests (XHR).
+=====================================================
+71.different between pubic ip address and private ip address in aws?
+In AWS, both public and private IP addresses are used to identify resources within a Virtual Private Cloud (VPC),
+
+Public IP Address:
+
+A public IP address is reachable from the public internet. It allows resources, such as EC2 instances, to communicate directly with the internet.
+Private IP Address:
+
+A private IP address is used for communication within the VPC and is not reachable directly from the internet. It is used for internal networking purposes.
+==================================================
+72.what is elastic IP address in AWS?
+Elastic IP addresses offer a convenient way to maintain a static public IP address for your EC2 instances in AWS, providing flexibility and reliability for your cloud-based applications and services.
+====================================================
+73.how can we encrypt the data in ec2 instance?
+
+Encrypting Data at Rest:
+
+Think of your data when it's just sitting on your EC2 instance's hard drive. We want to protect it there.
+One way to do this is by using a special kind of hard drive called EBS volume, and we can turn on a setting to make sure anything stored on that hard drive is scrambled up in a way that only we can unscramble it. This is like putting a lock on your data so that even if someone gets access to your hard drive, they can't read it without the key.
+Another way is if your applications, like databases or file systems, have their own way of locking up their data. This is like those applications having their own locks on their data drawers.
+Encrypting Data in Transit:
+
+Now, think about when your data is traveling between your EC2 instance and other places, like your computer or a different server.
+Just like you might put your data in a locked box when sending it through the mail to keep it safe, we use something called TLS/SSL encryption for data traveling over the internet. It's like putting your data in a secure, locked box before sending it, so even if someone tries to peek at it while it's on its way, they can't see what's inside.
+When you're connecting to your EC2 instance remotely, like using SSH to talk to it from your computer, SSH makes sure that the conversation is secure, so nobody can eavesdrop on what you're saying or doing.
+Managing Encryption Keys:
+
+Imagine your encryption key as the special key that unlocks your locked data. You want to make sure that key is kept safe.
+AWS Key Management Service (KMS) is like a really secure keychain where you can store your keys. You can make different keys for different locks, like one for your data on EBS volumes and another for your application's secrets.
+It's important to take care of these keys, just like you would with your house keys. Keep them safe and don't let just anyone get hold of them.
+===================================================
+74.Factor to consider when we create a ec2 instance?
+
+as per the requirements
+Instance Type
+Operating System
+Region and Availability Zone:
+Networking Configuration:-->Virtual Private Cloud (VPC),Public or Private Subnet:
+=================================================
+75.how can we secure ec2 instance?
+ecuring an EC2 instance involves implementing various measures to protect it against unauthorized access, malicious attacks, and data breaches
+Use Strong Authentication:
+Implement Network Security:
+Encrypt Data:
+Secure Communication:-Use HTTPS (HTTP Secure) for web applications to encrypt data transmitted between clients and servers.
+===================================================
+76.rule of creating key pair in aws?
+When creating a key pair in AWS, which is commonly used for securely accessing EC2 instances
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

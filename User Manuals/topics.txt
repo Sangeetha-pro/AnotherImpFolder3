@@ -1,0 +1,20 @@
+	Core Java – OOPS , Abstraction & Interfaces , Collection and its implementation , Exception Handling (Inclusive Custom Exception) , String , Serialization .  Junit – Basics Concepts, 
+
+Exception handling-6pm
+Serialization
+junit                
+
+	//Design patterns & SOLID Principles
+	//Spring Core – About Spring beans, Dependency Injection , Auto wiring , Annotations , 
+	//Spring Boot features , Some Scenario based Annotations and implementation questions.
+	//Spring Boot Microservices – Architecture , Monolithic & microservices, why & why microservices, Steps to create spring boot microservices
+
+	//Hibernate & Data JPA – ORM, Caching , annotations , implementation, queries , JPA methods , Transaction management.
+
+	Coding Questions & Logic – Array , String , prime number , palindrome . (PFA)
+
+	SQL– Basics , Join Queries , subqueries
+
+	Maven, Junit, Sonar
+	DevOps – GIT, Jenkins, Docker, Kubernetes
+	Cloud Computing, Types of cloud, important AWS services 

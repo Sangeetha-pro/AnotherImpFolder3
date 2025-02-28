@@ -1,0 +1,56 @@
+WRAPPER CLASSES:
+
+A Wrapper class wraps (encloses) around a data type and gives it an object appearance
+
+Wrapper classes are final and immutable.
+
+TYPES:
+
+Wrapper: Boolean,Byte,Character,Double,Float,Integer,long,Short.
+
+Primitive:
+ Boolean,byte,char,double,float,int,long,short
+
+Why do we want wrapper classes?
+
+The thing about the wrapper classes is , they offer us a lot of options , additional options.
+
+Example:
+I woud want to create a boolean value from a string or I would want to create a integer value from a String.
+We can do that using wrapper classes.
+
+The other things that wrapper class provides are a number of utility methods.
+
+Example:
+I have float and I would want the integer value of that specific float.
+I can use a intaue() method.
+
+Float floatWrapper = Float.valueOf(57.0f);
+int floatToInt = floatWrapper.intValue();
+
+Creating Wrapper classes:
+
+1) Integer integer = new Integer(5);
+
+2) Integer integer = Integer.valueOf(5);
+
+3) Integer integer =Integer.valueOf("2345")
+
+This will accept the String format also.
+
+Wrapper class also immutable.
+That means, once a value is assigned to them, we cannot change it.
+
+1) Difference between Integer integer = new Integer(5); and Integer integer = Integer.valueOf(5);
+
+Integer integer = Integer.valueOf(5); this would check and re-use if there is an existing object of the integer with same value .
+
+If it finds another object with the same value , it would try and re-use and it would return the same.
+
+That's Okay because the value of that object will not change.
+
+Integer is immutable.
+
+So , recommended to use the valueOf (Integer integer = Integer.valueOf(5);) because it does not create a new object evertime.
+
+-------------------------------------------

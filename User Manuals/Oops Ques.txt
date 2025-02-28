@@ -1,0 +1,28 @@
+1) What is OOP? Explain its principles and benefits.
+ OOP is a programming paradigm that focuses on creating objects that interact with each other to solve problems. 
+ inheritance, polymorphism, encapsulation, and abstraction.
+
+Benefits of oops?
+code reusability, modularity, and maintainability.
+--------------------------------------------------------------------------
+2)What is a class in Java? What is an object?
+ A class in Java is a blueprint for creating objects. It defines the properties and behavior of the objects that will be created from it. An object is an instance of a class that has its own state and behavior.
+------------------------------------------------------------------------
+3) Inheritance:
+Inheritance in Java is the ability of a subclass to inherit properties and behavior from its superclass.
+The subclass can add its own unique properties and behavior as well.
+-------------------------------------------------------------------------
+4) Polymorphism:
+   Polymorphism in Java is the ability of an object to take on many forms. It allows a subclass to have its own implementation of a method that is already defined in its superclass. 
+Example: Draw--Shape--circle
+-------------------------------------------------------------------------
+5) Encapsulation:
+  Encapsulation in Java is the process of hiding the implementation details of an object and only exposing the necessary methods and properties.
+Example:Bank-- exposes only depositing and withdrawing money.
+-------------------------------------------------------------------------
+6)Abstraction:
+  Abstraction in Java is the process of creating a simplified representation of a complex object or system. It allows you to focus on the important details and ignore the irrelevant ones.
+Example:car--expose only the starting ,stopping et and hides the internal workings.
+-------------------------------------------------------------------------
+7) Access Modifiers:
+ Access modifiers in Java control the visibility and accessibility of a class, method, or variable. There are four access modifiers in Java: public, private, protected, and default. 

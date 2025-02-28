@@ -1,0 +1,14 @@
+Constructor:
+1.Name of the constructor is same as the name of the class
+2.There no returntype for constructor.
+3.we use Constructor to set a  initial value/state.
+4. we can assign a initial values to the member variables using a constructor.
+
+whenever we creating a object with new the constructor is created(default). 
+if we don't provide a constructor , then java compiler provides a default constructor .
+
+whenever we created contructor by manual ourselves java compiler will not provide a default constructor anymore. Then we have to provide a no-argument constructor.
+
+next thing is , by using "this" keyword we can call other constructor.
+
+The way we call other constructor is by using the keyword  "This" followed bt parameter

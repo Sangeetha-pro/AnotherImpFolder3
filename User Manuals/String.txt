@@ -1,0 +1,82 @@
+ String : 
+   A String Class can store a sequence of characters
+
+   String is not a primitive in Java but a class in its own right.
+
+Once a instance of a string class is created with a specific value, we will be change the value of that specific variable.
+
+so , String is immutable.
+ String is a special class in java.
+In String we dont want to use the constructor
+
+Every String iteral is  a instance of a class
+String starts index with 0--str.charAt(0) 
+
+String str= "test"
+
+"test" -- String literals.
+
+test.length() is 4
+
+str.charAt(0) -To get specific character in string
+
+Substring accepts index of the characters. And we can specify start and end of the string
+
+Object.substring(staring_index--included ,  Ending_index--Excluded)
+
+
+String BiggerString = "This is a lot of text"
+
+BiggerString.substring(5)
+
+is a lot of text.
+
+BiggerString.substring(5,13)
+
+-------------------
+concat-concat is a function to concat a string content of that specific string with another string.
+
+Example:
+
+ String str= "Welcome"
+
+str.concat("here");
+
+"Welcome here"
+
+-----------------------
+
+toUpperCase() -- makes the string in capital
+
+toLowerCase() -- makes the string in lowercase
+---------------------
+trim() --- This method will remove the whitespaces.
+------------------------
+
+String and int--- It becomes concatenation.
+
+int i=20;
+
+System.out.println("Value of " + 20);
+
+-------------------------------------
+
+replace-- with this method we can replace 
+
+"abc".replace("ab" , "xy");
+--------------------------------------
+
+str.setCharAt(1 ,'e')
+
+This method also is like replace. 
+------------------------------------
+
+StringBuffer:
+StringBuffer is immutable.
+
+---------------------------------
+StringBuilder--Similar to stringbuffer
+
+StringBuffer is a synchronised class.
+That means, StringBuffer is a cass which is ready for multithreading.
+If we ready for multithreading , it means that there is a penalty which is imposed on you. That means when we are running in a single-threaded scenarios where we don't really need all the complexities around multithreading , StringBuffer might get really slow and in those kind of situations , we can use StringBuilder.

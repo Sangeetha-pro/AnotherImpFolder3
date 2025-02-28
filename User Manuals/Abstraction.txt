@@ -1,0 +1,20 @@
+Abstraction:
+
+For example : If we creating a class called motorbike we dont really need to understand what is happening inside in motorbike 
+It's sufficient if we know that,this is the key,I would need to put it in and start my bike and I would be able to use the gears and accelerators.
+we dont really need to understand what is happening inside in engine and al kind of stuffs.
+
+This is exactly the same concept that comes to programming ,
+here we are writing the java program, we not writing machine code nad we not really wrting zeros and ones like that  all that kind of job is abstracted away
+
+we write java codes behind the screens the code is compiled , bute code is generated , and its run on the JVM.
+
+So, all that kind of things is abstracted away from us.
+
+That is called abstraction.
+
+Encapsulation: hiding the data that is belonging to a specific object.
+
+we would only allow operations to be performed. we will not allow access to the data, that's Encapsulation.
+
+Abstraction: We try to hide all the complexities .

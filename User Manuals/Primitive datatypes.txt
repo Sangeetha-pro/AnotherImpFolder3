@@ -1,0 +1,160 @@
+Primitive datatypes:--Basic data types in Java including integers, booleans, and characters
+
+INTERGER:
+
+byte-8bits  -(8-bit integer with a range of -128 to 127) , 
+short-16bits  -(16-bit integer with a range of -32,768 to 32,767) , 
+int-32bit  -(32-bit integer with a range of -2,147,483,648 to 2,147,483,647) , 
+long-64bits  -(64-bit integer with a range of -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+
+FLOATING POINT:
+
+float f=4.5f --32 bits  (32-bit IEEE 754 floating-point number with a range of approximately 3.4E-38 to 3.4E+38)
+double d=4.8 --64 bits  (64-bit IEEE 754 floating-point number with a range of approximately 4.9e-324 to 1.8e+308)
+
+CHARACTER:
+
+char c='A'
+
+
+BOOLEAN:
+
+boolean isPrime=true
+               =false
+
+----------------------------------------------
+Integer Datatype
+ byte,short,long,int.
+
+Wrapper classes:
+      Wrapper classes contains details about the size of each one of these datatypes.
+
+-----------------------------------------------
+FLOATING POINT:
+
+we cannot do financial calculations by using float or double datatype , because they are not accurate.
+
+To overcome this we can use BigDecimal.
+BigDecimal is a class in java. we can pass string value to this.
+
+BigDecimal class is immutable in java .
+
+creating a BigDecimal:
+
+    BigDecimal number1 = new BigDecimal("34.56789");
+
+-------------------------------------------------
+
+BOOLEAN: --(Data type that represents true or false values)
+
+The result of relational operator is a boolean value.
+(ie: true or false)
+
+LOGICAL OPERATOR:
+
+1.&&--and operator (short circuit operator)
+
+&& (and) results are true when both these results are true.
+
+The result of && is true ,when both the operands are true.
+
+int i=10;
+int j=15;
+
+j > 15 && i++ > 5;
+
+here , j > 15 is false so , at starting itself && operator is false so it does not evaluate the next coming expression , because it knows that is false.
+
+& -- 
+int i=10;
+int j=15;
+
+j > 15 & i++ > 5;
+
+here , j > 15 is false, then also it will execute the i++
+
+
+true && true---true
+true && false---false
+false && true---false
+false && flase---false
+
+2.|| --OR operator
+
+|| (OR) operator is true , when if atleast one of the operands is true.
+
+| (OR) operator is false , when only both the operands are false.
+
+true || true ---true
+true || false ---true
+false || true ---true
+false || flase ---false
+
+3. ^ --(XOR) operator
+
+^ operator is true, when both the operands are different from eachother
+
+true ^ true --false
+true ^ false--true
+false ^ true --true
+false ^ false --false 
+
+4. ! --(NOT) operator   (Represented by the exclamation mark (!) and is used to negate a boolean value)
+
+Its is reverse the result
+
+!(true)--false
+!(false)--true
+
+---------------------------------------------------------------------------------------
+
+CHARACTER: -(Data type that represents a single character)
+
+characters have their own integer representation
+creating a character:
+char ch ='a';
+
+There are a huge set of characters with things called Unicode values.
+So, each of the characters that we can write is assigned something called a unicode value.
+ 
+all unicode vaues are supported by java.
+
+the character datatype has two bytes.
+
+The interesting thing is the fact that a number value can also be assigned to a character.
+
+The result of an operation between a ch and a integer is always an integer.
+
+because integer is the larger .Integer is four bytes , character is two bytes.
+
+we can also typecast in character
+
+(int)ch
+
+This also can be the unicode value as well as the ASCII value for ch.
+
+1.isVowel()
+2.isConsonant()-- Anything that is not a vowel is a consonant
+3.isNumber()/isDigit()
+
+
+When a method is a static we no need to create a instance
+------------------------------------------------------------------------------------
+
+TYPECASTING:
+
+Process of converting one data type into another.
+
+EXPLICIT CAST:
+
+A type conversion that is explicitly declared by the programmer.
+
+LOSSY CONVERSION:
+
+Conversion that results in loss of information
+
+BIGDECIMAL:
+
+Java class for precise arithmetic operations on very large or very small numbers
+
+

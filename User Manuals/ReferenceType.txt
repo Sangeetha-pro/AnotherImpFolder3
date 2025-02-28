@@ -1,0 +1,28 @@
+REFERENCE TYPE:
+
+Any class we create that is reference type
+
+Pre-defined classes in java
+String 
+BigDecimal
+This is a reference type.
+
+Instance of a class is a reference variable.
+
+How is reference variable stored in memory ? VS
+
+How instances are stored in memory?
+
+ There is two types are memory.They are,
+
+Stack and heap
+
+All the new objects are stored in heap.
+
+When we create a local variable / primitive variable is always stored in a stack.
+
+
+
+
+
+

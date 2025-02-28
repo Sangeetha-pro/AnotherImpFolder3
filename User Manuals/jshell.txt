@@ -1,0 +1,9 @@
+/methods -- will give the list of methods which we have used
+
+/save-which we can use to save the code
+
+/save backup.txt--it will save the file for back-up
+
+/edit --name of the method 
+
+/list name of the method-it will list the code

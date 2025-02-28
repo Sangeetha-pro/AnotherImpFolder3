@@ -1,0 +1,19 @@
+@Table annotation specifies the table in the database with which this entity is mapped.
+@Id annotation specifies the primary key of the entity
+@GenerateValue annoation specifies the generation strategies for the values of primary keys
+@Transient - Field will not be saved in a database
+@Cascade-For example, a line item is part of an order; if the order is deleted, the line item also should be deleted. This is called a cascade delete relationship.
+@embeddable-JPA provides the facility to embed one entity inside another entity, so they are mapped to a single table.
+We can use the @Embeddable annotation to mark a class to be eligible as an embeddable class and we use the @Embedded annotation to embed an embeddable class. The attributes of an embedded class can be overridden using the @AttributeOverrides and the @AttributeOverride annotations.
+
+Spring Data JPA internally provides @Repository Annotation .So we no need to add @Repository annotation to the repository interface.
+
+By default Spring Data JPA made JpaRepository methods transactional. So we no need to add @Transactional annotation in service class.
+
+@RestController is convenient annotation that combines @Controller and @ResponseBody,Which eliminates the need to annotate every request handling method of the controller class with the @ResponseBody annotation.
+
+@ResponseBody annotation gives the response to that method like Response Status.
+
+@RequestBody annotation allows us to retrieve the request's body and automatically convert it to Java Object.
+
+Architecture of 

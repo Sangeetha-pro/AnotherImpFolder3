@@ -1,0 +1,62 @@
+﻿//21. What is overloading?
+22. What is overriding?
+//30. What is hashcode?
+7. What is Overriding?
+18. What is TreeSet?
+10. What is HashSet?
+5.. What are sets used for?
+19. What is Comparable and Comparator?
+------------------------
+
+1. What is exception? What are checked and unchecked exceptions?
+2. Thread can be created in how many ways? Which one do you prefer?
+
+
+
+
+
+
+16. What is Multithreading? How we create thread?
+17. Can we declare static in Interface?
+
+
+
+
+
+23. Difference between interface and abstract?
+24. Can you use static varible in interface?
+
+26. What is the difference between comparator and comparable interface?
+27. What is the difference between equals and compare method?
+
+29. what is the use of static and abstract keyword?
+
+
+
+33. Hashmap is different than others. Why?
+34. What methods must be overriden during multithreading?
+
+36. how to achieve multithreading in java
+37. Differnce between sleep and wait
+38. Working of hashSet
+41. What is an interface?
+42. Can we implements methods in interface?How?
+43. Which type of bugs can be handled by sonarqube?
+44. How to insert data in Treeset?
+45. What is collection and how map interface work in collection ?
+46. How to retrive data from map ?
+48. While putting Map in Set. Do we put only key or key and value both?
+
+
+12. What are the modules in Spring?
+13. What is Dispatcher Servlet?
+9. What are the annotations used in SpringBoot?
+6. Name a spring boot annotation?
+35. Advantages of using spring framework.
+47. Ànnotations of Spring MVC
+39. Use of requestMapping
+40. What is @restcontroller?
+31. What is MVC?
+25. What is view resolver?
+28. What features does @SpringBootApplication provides?
+32. What is autowired?

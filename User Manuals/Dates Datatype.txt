@@ -1,0 +1,81 @@
+Dates Datatype:
+
+Java 8 provides:
+
+1.LocalDate
+2.LocalDateTime
+3.LocalTime
+
+date can hold date.   10th Octber 2017.
+So, LocalDate can hold a date.
+
+LocalTime can hold just the time.  9:40am
+
+LocalDateTime can hold both the date and time.
+Like , 10th Octber 2017, 9:40am
+
+Some Of the methods:
+
+today.getDayOf()
+      getDayOfMonth()
+      getDayOfWeek()
+      getDayOfYear()
+      getMonth()
+      getMonthValue()
+
+To find the Year as leapyear nor not?
+
+today.isLeapYear()
+today.lengthOfYear()
+today.lengthOfMonth()
+
+How to find date after the 100 days?
+
+today.plusDays(100)
+today.plusMonths(100)
+today.plusYears(100)
+
+We can subtraction also,
+
+today.minusDays(100)
+today.minusMonths(100)
+today.minusYears(100)
+
+To set a specific value:
+
+LocalDate yesterday = LocalDate.of(2023, 04 , 17)
+2023-04-17
+
+"of" is a specific method in LocalDate which will help us to create a LocalDate instance, Specifying the specific year, month, and day.
+
+yesterday.withYear(2022)
+2022=04-17
+
+we can use now also.
+
+now.withDayOfMonth(20)
+2023-04-20
+
+I would want the same year, but with a specific day?
+
+now.withDayOfYEar(120)
+2023-04-30
+
+We can also compare dates and days
+
+now.isBefore(yesterday)
+now.isAfter(yesterday)
+
+These methods alow us to compare dates.
+
+These all also represented in LocalDateTime and LocalTime class as well.
+
+LocalDateTime class is immutable
+
+All the methods would create new instances with the new value.
+
+The interesting thing to note is that very similar API's exist on the LocalDateTime class as well. 
+
+REMEMBER: LocalDate,LocalDateTime and LocalTime are all immutable.
+All modification methods calls return new objects.
+

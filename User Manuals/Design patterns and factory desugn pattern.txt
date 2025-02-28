@@ -1,0 +1,49 @@
+Design patterns are reusable solutions to common software engineering problems. They are often used to improve code quality, maintainability, and flexibility. Java has several design patterns that are widely used, some of which are listed below:
+
+Singleton Pattern: This pattern ensures that a class has only one instance and provides a global point of access to that instance.
+
+Factory Pattern: This pattern provides an interface for creating objects, but allows subclasses to decide which class to instantiate.
+
+Abstract Factory Pattern: This pattern provides an interface for creating related objects, but allows subclasses to decide which classes to instantiate.
+
+Builder Pattern: This pattern separates the construction of a complex object from its representation, allowing different representations to be created with the same construction process.
+
+Prototype Pattern: This pattern creates new objects by copying existing ones, allowing objects to be created with different initial states.
+
+Adapter Pattern: This pattern allows two incompatible interfaces to work together by creating a wrapper class that adapts one interface to the other.
+
+Decorator Pattern: This pattern allows behavior to be added to an object dynamically, by wrapping it in a decorator object that implements the same interface.
+
+Observer Pattern: This pattern allows objects to be notified when the state of another object changes, by registering them as observers of that object.
+
+Command Pattern: This pattern encapsulates a request as an object, allowing it to be passed as a parameter, stored, or executed later.
+
+Template Method Pattern: This pattern defines the skeleton of an algorithm in a base class, but allows subclasses to provide specific implementations of certain steps.
+
+These are just a few examples of the many design patterns available in Java. The choice of pattern depends on the specific problem being solved and the design goals of the system.
+
+Advantanges:
+They are reusable in multiple projects.
+They provide the solutions that help to define the system architecture.
+They capture the software engineering experiences.
+They provide transparency to the design of an application.
+They are well-proved and testified solutions since they have been built upon the knowledge and experience of expert software developers.
+Design patterns don?t guarantee an absolute solution to a problem. They provide clarity to the system architecture and the possibility of building a better system.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Factory desin pattern
+
+Factory design pattern
+The Factory design pattern is a creational pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. In other words, the Factory pattern provides an abstraction over the process of creating objects, allowing you to create objects without specifying their exact class.
+The Factory pattern consists of four components:
+1.Product: This is the interface or abstract class that defines the objects to be created.
+2.Concrete Product: These are the classes that implement the Product interface and define the specific objects to be created.
+3.Creator: This is the abstract class that defines the factory method, which creates the Product objects.
+4.Concrete Creator: These are the classes that implement the Creator interface and override the factory method to create specific Concrete Product objects.
+The Factory pattern provides several benefits, including:
+1.Encapsulation: The Factory pattern encapsulates the creation of objects, allowing the client to create objects without knowing the exact class of the object being created.
+2.Flexibility: The Factory pattern provides flexibility in creating objects, allowing subclasses to alter the type of objects that will be created.
+3.Decoupling: The Factory pattern decouples the client from the implementation of the objects being created, which reduces the complexity of the client code.
+4.Testability: The Factory pattern makes it easier to test the client code, as the client code does not need to instantiate the objects directly.
+Some common examples of the Factory pattern in practice include creating instances of database connections, creating instances of different types of user interface components, and creating instances of different types of logging classes.
+Overall, the Factory pattern is a useful pattern for creating objects in a flexible, maintainable, and scalable way.

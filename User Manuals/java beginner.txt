@@ -1,0 +1,91 @@
+floating point with integer always the result will in floating point.
+
+5 + 5 * 6
+=35
+
+PRECEDENCE --- * / % > + -
+
+to do first + 
+do (5 + 5) * 6
+
+Statement- Instruction given to computer
+
+String literal-"Something between Double Quotes"
+
+printf() method allows formatting and printing values from expressions
+
+%d- for integer
+%s- for string
+%f- for floating
+
+A variable is comething whose vale can change over the lifetime of the program.
+In the program at different statges , these variables have different values.
+
+Java is strongly-typed language.
+
+Variables in Depth
+
+Variable & Memory
+Naming a varaible and rules
+Variable Types-
+Assignment operator
+
+How variables are stored in memory?
+  int a=10;
+  int b=80;
+variables will store in random memory ocation.
+  
+Naming a variable:
+
+Combination of letters,numbers,$ and under_score(_).
+Cannot start with a number
+cannot be a keyword
+no limit on length of identifier
+CamelCase
+
+Primitive variable datatypes:
+byte-8bits , short-16bits , int-32bit , long-64bits
+
+float f=4.5f --32 bits
+double d=4.8 --64 bits
+
+char c='A'
+
+boolean isPrime=true
+               =false
+
+Assignment operator(=):
+
+Copying the value of expression on the right-hand side to the varaible on the left-hand side
+
+
+for loop
+
+for i=1 to 10
+statement;
+
+for(initialisation;condition;update)
+statement;
+
+comparison operator(==)--To compare with variable
+
+In if statement only one statement should fall under the if
+
+If we want a group of statements under a condition we use block {}
+
+(n%2==0)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+METHODS
+
+A name we give it to set of lines of code is a method
+Meyhods can have inputs
+methods can have outputs
+
+Method Syntax
+
+ReturnType nameOfTheMethod() {
+    //Body of the method
+}
+   

@@ -1,0 +1,48 @@
+Conditional Statements:
+
+IF-- In IF the conditional is true , the code in the if gets executed.
+
+we cannot use assignment operator(=) in if statement 
+
+------------------------
+System.in is user input
+System.out is user output
+
+//Type object = new Type(argument);
+
+Scanner scanner = new Scanner (System.in);
+
+To get user input as integer
+
+int number = scanner.nextInt();
+-------------
+
+SWITCH() STATEMENT:
+
+we can have default anywhere in switch() statement.
+
+we can do switch on int , char , byte, short ,string and enum datatypes.
+but not in long, double, float,boolean.
+
+Inside the case we cannot have condition.
+
+-----------------------------------------
+
+TERNARY OPERATOR (?:)
+
+Condition ? true : false
+
+
+ 
+jshell> if(i%2==0){
+        isEven = true;
+        }else{                                                                             isEven = false;
+    }
+
+---------
+jshell> isEven = (i%2==0) ? true : false;
+isEven ==> true
+
+this operator can be used on other datatypes.
+
+String even = (i%2==0) ? "yes" : "No";

@@ -1,0 +1,119 @@
+Loops:-Loop Statements help you to repeat code execution.
+
+A loop is used to run same code again and again.
+
+FOR LOOP : --Used to iterate a specific number of times
+    
+For Loop is used to loop code specified number of times.
+
+SYNTAX:
+
+for (initialization; condition; iteration) { // code to be executed }
+
+for (int i=0; i<=10 ; i++){
+  System.out.println(i);
+}
+
+The condition should be true only then the loop will get executed.
+
+for (initialisation ; condition ; update)
+
+ each one of these part can be empty.
+
+
+
+------------------------------------------
+
+WHILE LOOP:--Repeatedly execute a block of code while a condition is true
+       
+while (condition){
+System.out.println();
+i++;
+}
+
+while is similar to if statement
+
+here, the difference between while and if is
+if is executed only once.
+while will execute  multiple times.
+
+In while we have to increment the value.
+If increment is not done in while loop it will be infinite.
+
+int i=-2;
+
+while (i<5){
+System.out.println(i);
+i++;
+}
+
+output:
+-2
+-1           
+0
+1
+2
+3
+4
+
+The code in the while gets exceuted until the condition mets.
+
+When we use while loop?
+
+we will use while loop , when we dont know how many times it will print.
+
+
+-------------------------------------------------------------------------------------------
+
+DO-WHILE LOOP: -- Executes the code block once before checking the condition
+
+do{
+System.out.println(i + "")
+i++;
+} while (i<5);
+ 
+The major difference between the WHILE & DO-WHILE LOOP:
+
+The code in the Do-While loop will execute atleast once , Even when the condition is not met also.
+But in while loop we will check the condition first , if the condition is not met, the code will not gets excuted.
+
+-------------------------------------------------
+
+BREAK AND CONTINUE:
+
+Break :  --Used to exit a loop or a switch statement
+
+Break will break the loop when the condition is met.
+Break statement inside the loop will completely take outside from the specific loop.
+
+
+Break takes competely out of the loop.
+----------------------------------------
+
+Continue: -Used to skip over one iteration of a loop
+
+It does not break out of the loop , But it goes on next iteration of the loop.
+
+Continue will continue the loop but next part of the iteration is completely skipped.
+
+-----------------------------------------
+Choosing a loop:
+
+1.Do you know how many times to run?
+
+FOR LOOP
+
+2.Do yo when to end the loop?
+
+WHILE LOOP
+For Example: user is entering a list of values.So, we would want to run the loop until user enters a specific kind of values or
+you want to process a list of numbers until you want to encounter a negative number or until you want to see a odd number or want to process the list until to see the prime numbers.
+
+IN all thes situations we don't know how many times the loop would run.
+We want to nd a loop based on a specific condition
+
+In these situation we have to go with WHILE or DO-WHILE LOOP.
+
+3.Do you want to execute the loop atleast once?
+
+DO-WHILE
